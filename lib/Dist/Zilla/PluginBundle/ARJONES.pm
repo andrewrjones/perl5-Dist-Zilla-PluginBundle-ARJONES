@@ -16,10 +16,6 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
 
   [@Basic]
 
-  [@Git]
-
-  [@Basic]
-
   [PodCoverageTests]
   [PodSyntaxTests]
   [Test::Perl::Critic]
@@ -34,6 +30,8 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
 
   [GithubMeta]
   issues = 1
+
+  [@Git]
 
 Heavily based on L<Dist::Zilla::PluginBundle::RJBS>.
 
