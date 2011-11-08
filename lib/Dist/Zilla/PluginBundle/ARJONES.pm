@@ -20,6 +20,7 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
 
   [@Basic]
 
+  [PodCoverageTests]
   [PodSyntaxTests]
   [Test::Perl::Critic]
 
@@ -53,6 +54,7 @@ sub configure {
           PkgVersion
           MetaJSON
           NextRelease
+          PodCoverageTests
           PodSyntaxTests
           Test::Perl::Critic
           )
