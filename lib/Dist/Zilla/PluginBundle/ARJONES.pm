@@ -45,6 +45,21 @@ use Dist::Zilla::PluginBundle::Git;
 sub configure {
     my ($self) = @_;
 
+    # @Basic has:
+    #    GatherDir
+    #    PruneCruft
+    #    ManifestSkip
+    #    MetaYAML
+    #    License
+    #    Readme
+    #    ExtraTests
+    #    ExecDir
+    #    ShareDir
+    #    MakeMaker
+    #    Manifest
+    #    TestRelease
+    #    ConfirmRelease
+    #    UploadToCPAN
     $self->add_bundle('@Basic');
 
     $self->add_plugins(
@@ -64,6 +79,11 @@ sub configure {
 
     $self->add_plugins( [ GithubMeta => { issues => 1, } ], );
 
+    # @Git has:
+    #    Git::Check
+    #    Git::Commit
+    #    Git::Tag
+    #    Git::Push
     $self->add_bundle('@Git');
 }
 
