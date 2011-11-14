@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.113180  2011-11-14 19:05:20 Europe/London
     Update Prereqs
     Add [PodCoverageTests]
     Add Dist::Zilla::App::Command::cover and Dist::Zilla::App::Command::perltidy as Prereqs
