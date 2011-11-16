@@ -33,6 +33,12 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
 
   [@Git]
 
+It also adds the following as Prereqs, so I can quickly get my C<dzil> environment set up:
+
+=for :list
+* L<Dist::Zilla::App::Command::cover>
+* L<Dist::Zilla::App::Command::perltidy>
+
 Heavily based on L<Dist::Zilla::PluginBundle::RJBS>.
 
 =cut
