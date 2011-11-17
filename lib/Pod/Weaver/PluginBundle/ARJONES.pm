@@ -20,6 +20,8 @@ Heavily based on L<Pod::Weaver::PluginBundle::RJBS>.
 use Pod::Weaver::Config::Assembler;
 sub _exp { Pod::Weaver::Config::Assembler->expand_package( $_[0] ) }
 
+=for Pod::Coverage mvp_bundle_config
+=cut
 sub mvp_bundle_config {
     my @plugins;
     push @plugins, (

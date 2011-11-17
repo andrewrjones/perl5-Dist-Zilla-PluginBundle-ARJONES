@@ -46,6 +46,8 @@ Heavily based on L<Dist::Zilla::PluginBundle::RJBS>.
 use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 
+=for Pod::Coverage configure
+=cut
 sub configure {
     my ($self) = @_;
 
