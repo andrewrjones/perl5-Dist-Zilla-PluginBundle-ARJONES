@@ -21,6 +21,7 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [Test::Perl::Critic]
   [NoTabsTests]
   [EOLTests]
+  [Test::Kwalitee]
 
   [AutoPrereqs]
 
@@ -82,6 +83,7 @@ sub configure {
           Test::Perl::Critic
           NoTabsTests
           EOLTests
+          Test::Kwalitee
           )
     );
 
