@@ -19,6 +19,8 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [PodCoverageTests]
   [PodSyntaxTests]
   [Test::Perl::Critic]
+  [NoTabsTests]
+  [EOLTests]
 
   [AutoPrereqs]
 
@@ -78,6 +80,8 @@ sub configure {
           PodCoverageTests
           PodSyntaxTests
           Test::Perl::Critic
+          NoTabsTests
+          EOLTests
           )
     );
 
