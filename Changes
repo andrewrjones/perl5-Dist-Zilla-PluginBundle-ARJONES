@@ -1,4 +1,5 @@
 {{$NEXT}}
+    Add [Test::Portability]
 
 1.113320  2011-11-28 13:47:14 Europe/London
     Add [NoTabsTests], [EOLTests] and [Test::Kwalitee]

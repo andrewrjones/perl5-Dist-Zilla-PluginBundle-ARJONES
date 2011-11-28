@@ -21,6 +21,7 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [Test::Perl::Critic]
   [NoTabsTests]
   [EOLTests]
+  [Test::Portability]
   [Test::Kwalitee]
 
   [AutoPrereqs]
@@ -48,6 +49,8 @@ Heavily based on L<Dist::Zilla::PluginBundle::RJBS>.
 
 use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
+
+use Dist::Zilla::Plugin::Test::Portability;
 
 =for Pod::Coverage configure
 =cut
@@ -83,6 +86,7 @@ sub configure {
           Test::Perl::Critic
           NoTabsTests
           EOLTests
+          [Test::Portability]
           Test::Kwalitee
           )
     );
