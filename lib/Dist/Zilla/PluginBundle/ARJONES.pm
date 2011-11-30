@@ -57,6 +57,7 @@ use Dist::Zilla::Plugin::Test::Portability;
 
 =for Pod::Coverage configure
 =cut
+
 sub configure {
     my ($self) = @_;
 
@@ -93,7 +94,8 @@ sub configure {
           Test::Kwalitee
           )
     );
-    $self->add_plugins( [ 'Test::PodSpelling' => { stopwords => [qw/ARJONES ARJONES's/] } ] );
+    $self->add_plugins(
+        [ 'Test::PodSpelling' => { stopwords => [qw/ARJONES ARJONES's/] } ] );
 
     $self->add_plugins( [ PodWeaver => { config_plugin => '@ARJONES' } ] );
 

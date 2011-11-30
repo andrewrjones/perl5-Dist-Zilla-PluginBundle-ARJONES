@@ -22,6 +22,7 @@ sub _exp { Pod::Weaver::Config::Assembler->expand_package( $_[0] ) }
 
 =for Pod::Coverage mvp_bundle_config
 =cut
+
 sub mvp_bundle_config {
     my @plugins;
     push @plugins, (
