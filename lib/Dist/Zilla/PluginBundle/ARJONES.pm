@@ -24,6 +24,8 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [EOLTests]
   [Test::Portability]
   [Test::Kwalitee]
+  [Test::Pod::No404s]
+  [Test::PodSpelling]
 
   [AutoPrereqs]
 
@@ -52,6 +54,7 @@ use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 
 # Alphabetical
+use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
 use Dist::Zilla::Plugin::Test::Portability;
 
@@ -92,6 +95,7 @@ sub configure {
           EOLTests
           Test::Portability
           Test::Kwalitee
+          Test::Pod::No404s
           )
     );
     $self->add_plugins(
