@@ -51,6 +51,8 @@ Heavily based on L<Dist::Zilla::PluginBundle::RJBS>.
 use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 
+# Alphabetical
+use Dist::Zilla::Plugin::Test::PodSpelling;
 use Dist::Zilla::Plugin::Test::Portability;
 
 =for Pod::Coverage configure
@@ -91,6 +93,7 @@ sub configure {
           Test::Kwalitee
           )
     );
+    $self->add_plugins( [ 'Test::PodSpelling' => { stopwords => [qw/ARJONES ARJONES's/] } ] );
 
     $self->add_plugins( [ PodWeaver => { config_plugin => '@ARJONES' } ] );
 
