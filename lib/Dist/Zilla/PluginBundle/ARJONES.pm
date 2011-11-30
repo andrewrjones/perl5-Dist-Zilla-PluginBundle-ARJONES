@@ -10,6 +10,7 @@ use Moose::Autobox;
 use Dist::Zilla 2.100922;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
+=for stopwords Prereqs CPAN
 =head1 DESCRIPTION
 
 This is the plugin bundle that ARJONES uses. It is equivalent to:
@@ -86,7 +87,7 @@ sub configure {
           Test::Perl::Critic
           NoTabsTests
           EOLTests
-          [Test::Portability]
+          Test::Portability
           Test::Kwalitee
           )
     );
