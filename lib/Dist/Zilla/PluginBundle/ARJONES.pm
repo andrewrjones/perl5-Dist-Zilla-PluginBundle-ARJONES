@@ -64,6 +64,9 @@ use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
 use Dist::Zilla::Plugin::Test::Portability;
 
+=for Pod::Coverage mvp_multivalue_args
+=cut
+
 sub mvp_multivalue_args { return qw( stopwords ) }
 
 has stopwords => (
