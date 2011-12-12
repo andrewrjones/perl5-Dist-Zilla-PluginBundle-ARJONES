@@ -40,6 +40,10 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
 
   [@Git]
 
+It will take the following arguments:
+  ; extra stopwords for Test::PodSpelling
+  stopwords
+
 It also adds the following as Prereqs, so I can quickly get my C<dzil> environment set up:
 
 =for :list
@@ -59,6 +63,19 @@ use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
 use Dist::Zilla::Plugin::Test::Portability;
+
+sub mvp_multivalue_args { return qw( stopwords ) }
+
+has stopwords => (
+    is      => 'ro',
+    isa     => 'ArrayRef[Str]',
+    traits  => ['Array'],
+    default => sub { [] },
+    handles => {
+        push_stopwords => 'push',
+        uniq_stopwords => 'uniq',
+    }
+);
 
 =for Pod::Coverage configure
 =cut
@@ -100,11 +117,18 @@ sub configure {
           Test::Pod::No404s
           )
     );
+
+    # take stopwords from dist.ini, if present
+    if ( $_[0]->payload->{stopwords} ) {
+        for ( @{ $_[0]->payload->{stopwords} } ) {
+            $self->push_stopwords($_);
+        }
+    }
+
+    # our stopwords
+    $self->push_stopwords(qw/ARJONES ARJONES's TODO/);
     $self->add_plugins(
-        [
-            'Test::PodSpelling' => { stopwords => [qw/ARJONES ARJONES's TODO/] }
-        ]
-    );
+        [ 'Test::PodSpelling' => { stopwords => [ $self->uniq_stopwords ] } ] );
 
     $self->add_plugins( [ PodWeaver => { config_plugin => '@ARJONES' } ] );
 
