@@ -101,7 +101,10 @@ sub configure {
           )
     );
     $self->add_plugins(
-        [ 'Test::PodSpelling' => { stopwords => [qw/ARJONES ARJONES's/] } ] );
+        [
+            'Test::PodSpelling' => { stopwords => [qw/ARJONES ARJONES's TODO/] }
+        ]
+    );
 
     $self->add_plugins( [ PodWeaver => { config_plugin => '@ARJONES' } ] );
 
