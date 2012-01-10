@@ -59,6 +59,7 @@ use Dist::Zilla::PluginBundle::Git;
 
 # Alphabetical
 use Dist::Zilla::Plugin::EOLTests;
+use Dist::Zilla::Plugin::NoTabsTests;
 use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
