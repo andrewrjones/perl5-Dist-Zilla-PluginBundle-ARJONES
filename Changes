@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.120110  2012-01-11 12:10:04 Europe/London
     Fix Dist::Zilla::Plugin::NoTabsTests prereq
     Remove [EOLTests]. Too annoying
 
