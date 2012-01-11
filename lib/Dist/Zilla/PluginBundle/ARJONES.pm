@@ -21,7 +21,6 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [PodSyntaxTests]
   [Test::Perl::Critic]
   [NoTabsTests]
-  [EOLTests]
   [Test::Portability]
   [Test::Kwalitee]
   [Test::Pod::No404s]
@@ -58,7 +57,6 @@ use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 
 # Alphabetical
-use Dist::Zilla::Plugin::EOLTests;
 use Dist::Zilla::Plugin::NoTabsTests;
 use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
@@ -115,7 +113,6 @@ sub configure {
           PodSyntaxTests
           Test::Perl::Critic
           NoTabsTests
-          EOLTests
           Test::Portability
           Test::Kwalitee
           Test::Pod::No404s
