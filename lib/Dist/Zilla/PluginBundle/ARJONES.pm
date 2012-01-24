@@ -25,6 +25,7 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [Test::Kwalitee]
   [Test::Pod::No404s]
   [Test::PodSpelling]
+  [NoSmartCommentsTests]
 
   [AutoPrereqs]
 
@@ -62,6 +63,7 @@ use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
 use Dist::Zilla::Plugin::Test::Portability;
+use Dist::Zilla::Plugin::NoSmartCommentsTests;
 
 =for Pod::Coverage mvp_multivalue_args
 =cut
@@ -116,6 +118,7 @@ sub configure {
           Test::Portability
           Test::Kwalitee
           Test::Pod::No404s
+          NoSmartCommentsTests
           )
     );
 
