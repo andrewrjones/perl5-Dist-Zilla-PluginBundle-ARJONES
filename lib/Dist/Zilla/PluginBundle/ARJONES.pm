@@ -35,6 +35,8 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [NextRelease]
   [MetaJSON]
 
+  [Clean]
+
   [GithubMeta]
   issues = 1
 
@@ -58,6 +60,7 @@ use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 
 # Alphabetical
+use Dist::Zilla::Plugin::Clean;
 use Dist::Zilla::Plugin::NoTabsTests;
 use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
@@ -119,6 +122,7 @@ sub configure {
           Test::Kwalitee
           Test::Pod::No404s
           NoSmartCommentsTests
+          Clean
           )
     );
 
