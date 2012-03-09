@@ -1,4 +1,5 @@
 {{$NEXT}}
+    Add [Test::Compile]
 
 1.120460  2012-02-15 12:53:29 Europe/London
     Add [Clean]

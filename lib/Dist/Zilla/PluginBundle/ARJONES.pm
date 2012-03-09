@@ -26,6 +26,7 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [Test::Pod::No404s]
   [Test::PodSpelling]
   [NoSmartCommentsTests]
+  [Test::Compile]
 
   [AutoPrereqs]
 
@@ -62,6 +63,7 @@ use Dist::Zilla::PluginBundle::Git;
 # Alphabetical
 use Dist::Zilla::Plugin::Clean;
 use Dist::Zilla::Plugin::NoTabsTests;
+use Dist::Zilla::Plugin::Test::Compile;
 use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
 use Dist::Zilla::Plugin::Test::PodSpelling;
@@ -120,6 +122,7 @@ sub configure {
           NoTabsTests
           Test::Portability
           Test::Kwalitee
+          Test::Compile
           Test::Pod::No404s
           NoSmartCommentsTests
           Clean
