@@ -38,6 +38,7 @@ sub mvp_bundle_config {
         [ '@ARJONES/Overview', _exp('Generic'), { header => 'OVERVIEW' } ],
 
         [ '@ARJONES/Stability', _exp('Generic'), { header => 'STABILITY' } ],
+        [ '@ARJONES/Events',    _exp('Generic'), { header => 'EVENTS' } ],
     );
 
     for my $plugin (
