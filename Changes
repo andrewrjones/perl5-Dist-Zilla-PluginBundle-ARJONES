@@ -1,4 +1,6 @@
 {{$NEXT}}
+    Credit contributors based on great advice by dagolden (http://www.dagolden.com/index.php/1921/how-im-using-distzilla-to-give-credit-to-contributors/)
+    Add Pod::Weaver::Plugin::Encoding
 
 1.130670  2013-03-08 14:04:40 Europe/London
     PodWeaver: Print EVENTS before ATTRIBUTES and METHODS

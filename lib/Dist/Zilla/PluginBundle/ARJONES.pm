@@ -37,6 +37,8 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
 
   [Clean]
 
+  [ContributorsFromGit]
+
   [GithubMeta]
   issues = 1
 
@@ -61,6 +63,7 @@ use Dist::Zilla::PluginBundle::Git;
 
 # Alphabetical
 use Dist::Zilla::Plugin::Clean;
+use Dist::Zilla::Plugin::ContributorsFromGit;
 use Dist::Zilla::Plugin::NoTabsTests;
 use Dist::Zilla::Plugin::Test::Compile;
 use Dist::Zilla::Plugin::Test::Kwalitee;
@@ -124,6 +127,7 @@ sub configure {
           Test::Pod::No404s
           NoSmartCommentsTests
           Clean
+          ContributorsFromGit
           )
     );
 
