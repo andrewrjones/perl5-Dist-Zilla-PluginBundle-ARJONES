@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.130720  2013-03-13 21:40:55 Europe/London
     Credit contributors based on great advice by dagolden (http://www.dagolden.com/index.php/1921/how-im-using-distzilla-to-give-credit-to-contributors/)
     Add Pod::Weaver::Plugin::Encoding
 
