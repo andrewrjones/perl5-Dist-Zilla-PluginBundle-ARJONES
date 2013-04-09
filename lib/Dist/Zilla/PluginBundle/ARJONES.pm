@@ -26,6 +26,8 @@ This is the plugin bundle that ARJONES uses. It is equivalent to:
   [Test::Pod::No404s]
   [NoSmartCommentsTests]
   [Test::Compile]
+  [ReportVersions::Tiny]
+  [Test::ChangesHasContent]
 
   [AutoPrereqs]
 
@@ -62,9 +64,11 @@ use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 
 # Alphabetical
+use Dist::Zilla::Plugin::Test::ChangesHasContent;
 use Dist::Zilla::Plugin::Clean;
 use Dist::Zilla::Plugin::ContributorsFromGit;
 use Dist::Zilla::Plugin::NoTabsTests;
+use Dist::Zilla::Plugin::ReportVersions::Tiny;
 use Dist::Zilla::Plugin::Test::Compile;
 use Dist::Zilla::Plugin::Test::Kwalitee;
 use Dist::Zilla::Plugin::Test::Pod::No404s;
@@ -128,6 +132,8 @@ sub configure {
           NoSmartCommentsTests
           Clean
           ContributorsFromGit
+          Test::ChangesHasContent
+          ReportVersions::Tiny
           )
     );
 
