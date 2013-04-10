@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+1.131000  2013-04-10 22:14:10 Europe/London
+
     Add Dist::Zilla::Plugin::Test::ChangesHasContent
     Add Dist::Zilla::Plugin::ReportVersions::Tiny
 
