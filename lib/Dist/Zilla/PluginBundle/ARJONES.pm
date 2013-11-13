@@ -148,12 +148,15 @@ sub configure {
 
     $self->add_plugins( [ GithubMeta => { issues => 1, } ], );
 
-    # @Git has:
-    #    Git::Check
-    #    Git::Commit
-    #    Git::Tag
-    #    Git::Push
-    $self->add_bundle('@Git');
+    # Git
+    $self->add_plugins(
+        qw(
+          Git::Commit
+          Git::Tag
+          Git::Push
+          )
+    );
+    $self->add_plugins( [ 'Git::Check' => { allow_dirty => '', } ], );
 }
 
 __PACKAGE__->meta->make_immutable;
