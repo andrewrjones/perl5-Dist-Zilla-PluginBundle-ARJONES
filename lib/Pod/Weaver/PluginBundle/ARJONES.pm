@@ -5,7 +5,6 @@ package Pod::Weaver::PluginBundle::ARJONES;
 
 # ABSTRACT: ARJONES's default Pod::Weaver config
 
-use Pod::Weaver::Plugin::Encoding ();
 use Pod::Weaver::Section::Contributors 0.001 ();
 
 =head1 DESCRIPTION
@@ -56,7 +55,7 @@ sub mvp_bundle_config {
 
     push @plugins,
       (
-        [ '@ARJONES/Encoding',  _exp('-Encoding'), {} ],
+        [ '@ARJONES/SingleEncoding',  _exp('-SingleEncoding'), {} ],
         [ '@ARJONES/Leftovers', _exp('Leftovers'), {} ],
         [ '@ARJONES/postlude', _exp('Region'),  { region_name => 'postlude' } ],
         [ '@ARJONES/Authors',  _exp('Authors'), {} ],
