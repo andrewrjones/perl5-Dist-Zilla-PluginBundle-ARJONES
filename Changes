@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.133200  2013-11-16 22:22:16 Europe/London
     Remove TravisYML plugin from build
     Change PWP::Encoding to PWP::SingleEncoding (Thanks sergeyromanov)
 
