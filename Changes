@@ -1,5 +1,6 @@
 {{$NEXT}}
     Remove TravisYML plugin from build
+    Change PWP::Encoding to PWP::SingleEncoding (Thanks sergeyromanov)
 
 1.133170  2013-11-13 19:34:01 Europe/London
     Fix dependencies
